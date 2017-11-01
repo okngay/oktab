@@ -34,7 +34,7 @@
     </div>
     <script src="src/jquery.youtubebackground.js"></script>
     <script>
-    var timeshow = 5;
+    var timeshow = 1;
     if (timeshow > 0) {
         setInterval(function function_name(argument) {
             timeshow--;
@@ -51,6 +51,11 @@
             fitToBackground: true,
             videoId: 'XUys2GCUSco',
             pauseOnScroll: true,
+            playerVars: {
+            autoplay: 1,
+            controls: 1,
+            showinfo: 0
+            },
             callback: function() {
                 videoCallbackEvents();
             }
